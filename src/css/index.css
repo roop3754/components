@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import './reset.css';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* --- Header --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #001f3f; 
+    color: #ffffff;
+}
+
+.main-header h1 {
+    font-size: 24px;
+}
+
+.main-header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-header nav a {
+    font-size: 16px;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.main-header nav a:hover {
+    opacity: 0.7;
+}
+
+/* --- Banner --- */
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #001f3f; 
+}
+
+.banner p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: 0 auto 40px; 
+    color: #444444; 
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.banner-buttons button {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid #3498db;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-buttons button.primary {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.banner-buttons button.secondary {
+    background-color: transparent;
+    color: #3498db;
+}
+
+.banner-buttons button:hover {
+    filter: brightness(90%);
+    transform: translateY(-1px);
+}
+
+/* --- Gallery --- */
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 5%;
+    background-color: #f5f5f5; 
+}
+
+.gallery-item {
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #001f3f;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #001f3f; 
+    color: #ffffff;
+    font-size: 14px;
+}
